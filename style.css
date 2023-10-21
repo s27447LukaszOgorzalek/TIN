@@ -1,0 +1,131 @@
+/* Ustawienia ogólne dla całego dokumentu */
+body {
+    margin: 0 auto; /* Wyśrodkowanie zawartości w poziomie */
+    width: 80%; 
+    overflow: auto; /* scroll */
+    background-image: url('https://idsb.tmgrup.com.tr/ly/uploads/images/2020/12/29/82220.jpg'); 
+    background-size: cover; /* Obraz tła dostosowany do rozmiaru okna przeglądarki */
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+/* Ustawienia dla głównego kontenera strony */
+#siteColumns {
+    display: flex; /* flexbox do układania elementów w poziomie */
+    height: 600px;
+}
+
+/* Pasek nawigacji */
+#navigation {
+    overflow-y: auto; 
+    height: 600px;
+    width: 250px; 
+    background-color: #3999ff; 
+    padding: 20px; 
+    opacity: 0.5; /* Półprzezroczystość paska nawigacji */
+
+}
+
+/* Linki w nawigacji */
+#navigation a {
+    display: block; /* Wyświetlanie jako bloki */
+    color: white; 
+    text-decoration: none; /* Usunięcie podkreślenia */
+    padding: 10px; 
+    margin: 5px 0; 
+    background-color: rgba(0, 0, 0, 0.5); /* Półprzezroczyste czarne tło dla linków */
+    border-radius: 5px; /* Zaokrąglenie rogów */
+}
+
+/* Przyciemnianie podczas najeżdżania myszką */
+#navigation a:hover {
+    background-color: rgba(0, 0, 0, 0.75); 
+}
+
+/* Główna zawartość */
+#content {
+    overflow-y: auto; 
+    flex: 1; /* Zajęcie całej dostępnej przestrzeni w kontenerze flex */
+    padding: 20px; 
+    max-height: 100vh; 
+    background-color: #4eb0ee; 
+}
+
+/* Obrazek z atrybutem alt="Cat" */
+img[alt="Cat"] {
+    display: block; 
+    margin: 20px auto; 
+    border-radius: 15px; 
+}
+
+/* Kontenery w formularzu */
+form fieldset > div {
+    display: flex; 
+    justify-content: space-between; /* Rozmieszczenie elementów z równymi odstępami między nimi */
+    margin-bottom: 15px; 
+}
+
+/* Etykiety w formularzu */
+form label {
+    flex: 1; 
+    margin-right: 15px; /* Odstęp po prawej stronie etykiety */
+    align-self: center; /* Wyśrodkowanie etykiety w pionie względem pola wprowadzania */
+}
+
+/* Pola i obaszary tekstowe oraz listy w formularzu */
+form input[type="text"], form textarea, form select {
+    flex: 2; 
+    padding: 5px; 
+    border: 1px solid #ccc; /* Ramka wokół pola */
+}
+
+/* Zmiana rozmiaru obszaru tekstowego tylko w pionie */
+form textarea {
+    resize: vertical;
+}
+
+/* Przyciski w formularzu */
+form div:last-child {
+    display: flex; 
+    justify-content: flex-start; /* Wyrównanie przycisków do lewej strony */
+}
+
+/* Odstęp po prawej stronie przycisku "Wyślij" */
+form input[type="submit"] {
+    margin-right: 10px;
+}
+
+/* Tabela */
+table {
+    width: 100%; 
+    border-collapse: collapse; /* Łączenie obramowania komórek */
+    text-align: center; 
+}
+
+/* Nagłówki tabeli */
+table th {
+    background-color: #32a89f; 
+    color: white; /* Kolor tekstu nagłówków */
+    padding: 10px; 
+    border: 1px solid #ddd; 
+}
+
+/* Komórki tabeli */
+table td {
+    padding: 10px; 
+    border: 1px solid #ddd; 
+}
+
+/* Jasnoszary kolor tła dla co drugiego wiersza tabeli */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Stopka strony */
+footer {
+    margin: 0; /* Brak odstępów zewnętrznych */
+    padding: 20px; 
+    text-align: center; 
+    background-color: #003366; 
+    color: white; 
+}
