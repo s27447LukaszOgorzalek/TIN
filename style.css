@@ -21,9 +21,11 @@ body {
     height: 600px;
     width: 250px; 
     background-color: #3999ff; 
-    padding: 20px; 
     opacity: 0.5; /* Półprzezroczystość paska nawigacji */
+}
 
+#navigation > ul {
+    margin: 10px;
 }
 
 /* Linki w nawigacji */
