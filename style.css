@@ -10,7 +10,7 @@ body {
 }
 
 /* Ustawienia dla głównego kontenera strony */
-#siteColumns {
+#mainContainer {
     display: flex; /* flexbox do układania elementów w poziomie */
     height: 600px;
 }
@@ -22,6 +22,7 @@ body {
     width: 250px; 
     background-color: #3999ff; 
     opacity: 0.5; /* Półprzezroczystość paska nawigacji */
+    flex: 0,5;
 }
 
 #navigation > ul {
@@ -45,7 +46,7 @@ body {
 }
 
 /* Główna zawartość */
-#content {
+#siteColumns {
     overflow-y: auto; 
     flex: 1; /* Zajęcie całej dostępnej przestrzeni w kontenerze flex */
     padding: 20px; 
@@ -53,11 +54,13 @@ body {
     background-color: #4eb0ee; 
 }
 
-/* Obrazek z atrybutem alt="Cat" */
-img[alt="Cat"] {
+/* Obrazek z atrybutem alt="Flowers" */
+img[alt="Flowers"] {
     display: block; 
     margin: 20px auto; 
     border-radius: 15px; 
+    height: 300px;
+    width: 750px;
 }
 
 /* Kontenery w formularzu */
@@ -125,8 +128,8 @@ table tr:nth-child(even) {
 
 /* Stopka strony */
 footer {
-    margin: 0; /* Brak odstępów zewnętrznych */
-    padding: 20px; 
+    margin: 0px; /* Brak odstępów zewnętrznych */
+    padding: 1px; 
     text-align: center; 
     background-color: #003366; 
     color: white; 
